@@ -1,81 +1,81 @@
-# Turborepo starter
+<div align="center">
+  <h2 align="center"><strong>Stencil Design System (WIP)</strong></h2>
+  <p align="center">
+    Component Library for a Design System using Stencil and Turborepo
+  </p>
 
-This is an official starter Turborepo.
+</div>
 
-## Using this example
+<br/>
+<br/>
 
-Run the following command:
+## Structure
+
+This monorepo contains multiple projects that work together to create an integrated Design System
+
+### Packages
+
+> Packages are reusable libraries available for packages and apps
+
+| Package directory             | Description                                         |
+| ----------------------------- | --------------------------------------------------- |
+| `packages/ui-stencil`         | Component library                                   |
+| `packages/ui-stencil-angular` | Official Wrapper that improves Stencil with Angular |
+| `packages/ui-stencil-react`   | Official Wrapper that improves Stencil with React   |
+| `packages/ui-stencil-vue`     | Official Wrapper that improves Stencil with Vue     |
+
+### Apps
+
+> Apps can use all the available packages
+
+| App directory      | Description                                       |
+| ------------------ | ------------------------------------------------- |
+| `apps/app-angular` | Test App that uses the ui-stencil-angular library |
+| `apps/app-react`   | Test App that uses the ui-stencil-react library   |
+| `apps/app-vue`     | Test App that uses the ui-stencil-vue library     |
+
+### Config
+
+> Config are reusable eslint and typescript configurations
+
+| Package directory | Description                           |
+| ----------------- | ------------------------------------- |
+| `config/`         | Shared configuration for all packages |
+
+### Tools
+
+> Tools to generate Components, fetch Tokens or update dependencies
+
+| App directory | Description   |
+| ------------- | ------------- |
+| `tools/`      | CLI Tool that |
+
+<br/>
+
+## Development
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+Make sure you have the LTS version of [Node](https://nodejs.dev/) (18.7) installed in your machine. We recommend to use [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm).
+
+This monorepository uses Turborepo to manage dependencies and scripts. The first step is to install the local node dependencies:
 
 ```sh
-npx create-turbo@latest
+pnpm install
 ```
 
-## What's inside?
+### Development with Storybook
 
-This Turborepo includes the following packages/apps:
+<br/>
 
-### Apps and Packages
+## Continuous Integration
 
-- `docs`: a [Next.js](https://nextjs.org/) app
-- `web`: another [Next.js](https://nextjs.org/) app
-- `ui`: a stub React component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-config-next` and `eslint-config-prettier`)
-- `tsconfig`: `tsconfig.json`s used throughout the monorepo
+## Tools
 
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
+### Add a new Component
 
-### Utilities
+## Built With
 
-This Turborepo has some additional tools already setup for you:
+---
 
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-### Build
-
-To build all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm build
-```
-
-### Develop
-
-To develop all apps and packages, run the following command:
-
-```
-cd my-turborepo
-pnpm dev
-```
-
-### Remote Caching
-
-Turborepo can use a technique known as [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching) to share cache artifacts across machines, enabling you to share build caches with your team and CI/CD pipelines.
-
-By default, Turborepo will cache locally. To enable Remote Caching you will need an account with Vercel. If you don't have an account you can [create one](https://vercel.com/signup), then enter the following commands:
-
-```
-cd my-turborepo
-npx turbo login
-```
-
-This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
-
-Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
-
-```
-npx turbo link
-```
-
-## Useful Links
-
-Learn more about the power of Turborepo:
-
-- [Tasks](https://turbo.build/repo/docs/core-concepts/monorepos/running-tasks)
-- [Caching](https://turbo.build/repo/docs/core-concepts/caching)
-- [Remote Caching](https://turbo.build/repo/docs/core-concepts/remote-caching)
-- [Filtering](https://turbo.build/repo/docs/core-concepts/monorepos/filtering)
-- [Configuration Options](https://turbo.build/repo/docs/reference/configuration)
-- [CLI Usage](https://turbo.build/repo/docs/reference/command-line-reference)
+Made by [@chepetime](https://github.com/chepetimetime) at Mexico City 🇲🇽
