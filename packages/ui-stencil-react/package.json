@@ -2,30 +2,30 @@
   "name": "@chepe/stencil-react",
   "version": "1.0.0",
   "description": "",
-  "scripts": {
-    "test": "node ./__tests__/react-library.test.js",
-    "build": "npm run tsc",
-    "tsc": "tsc -p ."
-  },
+  "license": "ISC",
+  "author": "",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "files": [
     "dist"
   ],
-  "publishConfig": {
-    "access": "public"
+  "scripts": {
+    "build": "npm run tsc",
+    "test": "node ./__tests__/react-library.test.js",
+    "tsc": "tsc -p ."
   },
+  "types": "dist/types/index.d.ts",
   "dependencies": {
     "ui-stencil": "workspace:*"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^20.4.1",
-    "@types/react": "^18.2.14",
+    "@types/node": "^20.4.2",
+    "@types/react": "^18.2.15",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "typescript": "^5.1.6"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/types/index.d.ts"
+  "publishConfig": {
+    "access": "public"
+  }
 }

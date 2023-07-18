@@ -5,7 +5,8 @@
     "build": "turbo run build",
     "dev": "turbo run dev",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "lint": "turbo run lint"
+    "lint": "turbo run lint",
+    "maintenance": "turbo run maintenance"
   },
   "devDependencies": {
     "@turbo/gen": "^1.10.8",
