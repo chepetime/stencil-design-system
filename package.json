@@ -3,17 +3,17 @@
   "name": "react-design-system",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev -filter=ui-stencil,storybook",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "maintenance": "turbo run maintenance"
   },
   "devDependencies": {
-    "@turbo/gen": "^1.10.8",
-    "eslint": "^8.45.0",
+    "@turbo/gen": "^1.10.16",
+    "eslint": "^8.52.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "^3.0.0",
-    "turbo": "latest"
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.8"
   },
   "packageManager": "pnpm@7.15.0"
 }

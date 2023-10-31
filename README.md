@@ -30,6 +30,7 @@ This monorepo contains multiple projects that work together to create an integra
 
 | App directory      | Description                                       |
 | ------------------ | ------------------------------------------------- |
+| `apps/storybook`   | Storybook building environment                    |
 | `apps/app-angular` | Test App that uses the ui-stencil-angular library |
 | `apps/app-react`   | Test App that uses the ui-stencil-react library   |
 | `apps/app-vue`     | Test App that uses the ui-stencil-vue library     |
