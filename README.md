@@ -48,7 +48,7 @@ This monorepo contains multiple projects that work together to create an integra
 
 | App directory | Description   |
 | ------------- | ------------- |
-| `tools/`      | CLI Tool that |
+| `tools/maintenance`      | CLI Tool that updates all packages dependencies |
 
 <br/>
 
