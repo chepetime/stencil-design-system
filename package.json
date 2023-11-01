@@ -1,9 +1,11 @@
 {
   "private": true,
-  "name": "react-design-system",
+  "name": "stencil-design-system",
+  "version": "0.0.1",
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev -filter=ui-stencil,storybook",
+    "clean": "turbo run clean",
+    "dev": "turbo run dev --filter=ui-stencil --filter=storybook",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "lint": "turbo run lint",
     "maintenance": "turbo run maintenance"

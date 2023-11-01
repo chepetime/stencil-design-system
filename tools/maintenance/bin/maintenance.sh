@@ -36,7 +36,7 @@ cd $root
 
 # Check updates
 # Removed npm-check-updates from the loop because it has better performance
-npx npm-check-updates -u --cacheClear --silent --workspaces --root
+# npx npm-check-updates -u --cacheClear --silent --workspaces --root
 
 # Find all directories containing package.json files within two levels above the current directory (excluding node_modules)
 directories=$(find $root -maxdepth 3 -type d -name "node_modules" -prune -o -type f -name "package.json" -exec dirname {} \;)

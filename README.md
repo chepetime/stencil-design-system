@@ -67,6 +67,10 @@ pnpm install
 
 ### Development with Storybook
 
+```shell
+pnpm run dev
+```
+
 <br/>
 
 ## Continuous Integration

@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "build": "ng build",
+    "clean": "rm -rf node_modules .turbo dist",
     "ng": "ng",
     "start": "ng serve",
     "test": "ng test",
@@ -35,6 +36,6 @@
     "karma-coverage": "~2.2.1",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.2"
+    "typescript": "~5.2.0"
   }
 }

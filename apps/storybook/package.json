@@ -1,11 +1,13 @@
 {
-  "name": "storybook",
   "private": true,
+  "name": "storybook",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "clean": "rm -rf node_modules .turbo dist",
+    "dev": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006"
   },
   "dependencies": {
     "ui-stencil": "workspace:*"

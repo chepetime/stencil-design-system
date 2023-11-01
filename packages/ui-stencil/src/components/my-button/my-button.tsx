@@ -7,6 +7,6 @@ import { Component, h } from '@stencil/core';
 })
 export class MyComponent {
   render() {
-    return <button>Click me 2</button>;
+    return <button>Click me</button>;
   }
 }
