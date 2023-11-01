@@ -1,12 +1,11 @@
 <div align="center">
-  <h2 align="center"><strong>Stencil Design System (WIP)</strong></h2>
+  <h2 align="center"><strong>Stencil Design System</strong></h2>
   <p align="center">
     Component Library for a Design System using Stencil and Turborepo
   </p>
 
 </div>
 
-<br/>
 <br/>
 
 ## Structure
@@ -73,13 +72,30 @@ pnpm run dev
 
 <br/>
 
-## Continuous Integration
+## Architecture
 
-## Tools
+```mermaid
+graph TD;
+  stencilUi[stencil-ui]
+  uiStencilAngular[ui-stencil-angular]
+  uiStencilReact[ui-stencil-react]
+  uiStencilVue[ui-stencil-vue]
+  appAngular[app-angular]
+  appReact[app-react]
+  appVue[app-vue]
 
-### Add a new Component
+  stencilUi --> uiStencilAngular
+  stencilUi --> uiStencilReact
+  stencilUi --> uiStencilVue
 
-## Built With
+  uiStencilAngular --> appAngular
+  uiStencilReact --> appReact
+  uiStencilVue --> appVue
+
+  stencilUi -.-> appAngular
+  stencilUi -.-> appReact
+  stencilUi -.-> appVue
+```
 
 ---
 
