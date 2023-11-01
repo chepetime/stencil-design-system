@@ -13,7 +13,7 @@
     "build": "npm run tsc",
     "clean": "rm -rf node_modules .turbo",
     "test": "node ./__tests__/react-library.test.js",
-    "tsc": "tsc -p ."
+    "tsc": "tsc -p . --outDir ./dist"
   },
   "types": "dist/types/index.d.ts",
   "dependencies": {
@@ -24,7 +24,7 @@
     "@types/react": "^18.2.33",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "typescript": "^0"
+    "typescript": "^5.2.0"
   },
   "publishConfig": {
     "access": "public"
